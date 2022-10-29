@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Weather application and website made for mobile to provide a simple layout. Created for WDD330 at Brigham Young 
+  University - Idaho.">
+  <title>Weather</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside id="banner">
+    Drive Safely! Roads may be slick! &nbsp;<button id="close">&#x274C;</button>
+  </aside>
+  <img src="images/moon.png" id="icon" alt="Click For Light/Dark Mode">
+  <header>
+    <input type="text" class="search-box" id="search-box" placeholder="Search for a city...">
+  </header>
+  <main>
+    <section class="location">
+      <div class="city">Getting Location</div>
+      <div class="date">Date</div>
+    </section>
+    <div class="current">
+      <div class="temp">0<span>°F</span></div>
+      <div class="weather">Current Weather</div>
+      <div class="hi-low">0°F / 0°F</div>
+    </div>
+    <div class="fiveDay">
+      <input type="checkbox" id="dropdown1">
+      <label onclick="getFiveDayResults()" for="dropdown1">5 Day Forecast</label>
+        <div class="content">
+          <section id="fiveDayForecast" class="fiveDayForecast">
+          </section>
+        </div>
+      </div>
+    </main>
+  <script src="scripts.js"></script>
+</body>
+</html>
