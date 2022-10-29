@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Week 1</title>
+  </head>
+  <body>
+    <nav>
+      <ul id="navigation">
+        <li>
+          <a href="#" id="menu">Menu</a>
+        </li>
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li>
+          <a href="../w2/w2.html">Week 2</a>
+        </li>
+        <li>
+          <a href="../w3/w3.html">Week 3</a>
+        </li>
+        <li>
+          <a href="../w4/w4.html">Week 4</a>
+        </li>
+        <li>
+          <a href="../w5/w5.html">Week 5</a>
+        </li>
+        <li>
+          <a href="../w6/w6.html">Week 6:</a>
+        </li>
+        <li>
+
+          <a href="../w7/w7.html">Week7: Final</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main-container">
+    <header></header>
+    <div class="container">
+      <h2>Week 2</h2>
+      <section class="notes odd">
+        <h2>Notes</h2>
+        <hr>
+        
+          <h1>Week 2 </h1>
+          <h1>Chapter 2</h1>
+          <p>Variables are used in programming languages to refer to a value stored in memory.Variables are declared with the keywords let and const. let is used when the variable will change or be reassigned. While const is used when the variable cannot change.Const and variables are case sensitive so we need to use Camel Notation, typing lowercase and then upper case to declare a variable. For example: firstName, creditCard</p>
+          <b>What types of value can we assign to a variable?</b>
+         <p> There are two types of variables that can be assigned in JS. There are primitive values and reference types or better known as non-primitive values.
+             <ul>Primitives Values
+                 <li>String: Write it with apostrophes</li>
+                 <li>Number: It is written without apostrophes</li>
+                 <li>Boolean:True or False</li>
+                 <li> Undefined: When a variable is declared but not defined.</li> 
+                 <li>Null: Null is used when the user has not give a value to the variable if it was prompted</li>        
+              </ul>
+                 
+              <ul> Non-Primitives values are objects
+                  <li>Arrays</li>
+                  <li>Functions</li>
+                  <li>Object literals</li>
+              </ul>
+          </p>
+      
+               </p>
+               <b>Scope</b><p>Using const and let to declare variables means they are block scoped, so their value only exists inside the block they are declared in.There are two types of scopes Global and Local. Global variables are declared outside of a block and they are accessible in anywhere in the program. Local variables are defined inside a block and will only be available inside that block and not be accessible outside of that block.The words let or const should be used to declare a local variable.</p>
+               <b>Type Coercion</b><p>Type coercion happens when the operands of an operator are of different data types. JavaScript try to convert one operand type to an equivalent value of the other operand's type. </p>
+               <b>Converting string and numbers</b><p>There are way to convert strings to number and vice-versa with the numbers(), string(), and tostring() functions.The parseInt() also convert a string to a number, it is common to use when there is an input from the user.</p>
+               <b>Template strings</b><p> Template literals use the backtick character, `, to delimitate the string. They allow interpolation which means that a JS expression can be inserted inside a string.</p>
+              
+               <b>What is an object?</b><p>An object is a definition in JS that is populated with different properties or keys that are the same thing. In the case of a human, a person is an object, and its properties are its age, name, skin, height, etc. The properties of an object are like the characteristics of a human, a thing, or an animal.</p>
+         
+         
+               <h1>Chapter 3</h1>
+               <b>Arrays </b> <p>Arrays are used to store lists. The objects inside and the length of an array are dynamic so they can also change in runtime. To declare and array we use [] it is important to remember that in JS we can combine different data types in the same array</p>
+              <p> To create arrays literal we just need to create an array with initial values separated by a comma inside the square brackets.</p>
+              <p><b>const colors = </b>['blue', 'yellow,' 'red'];</p>
+              <b>Arrays properties and methods</b><p>Arrays has different properties or concepts which help with arrays modifications.</p>
+               <ul>
+                  <li>delete: Remove an item from an array.</li>
+                  <li>length: To find the length of an array.</li>
+                  <li>pop(): To remove the last item from an array.</li>
+                  <li>shift(): To remove the first item in the array.</li>
+                  <li>push(): To append a new value to the end of the array.</li>
+                  <li>unshift(): To append a new item to the beginning of the array.</li>
+                  <li>concat():To merge an array with one or more arrays.</li>
+                  <li>spread: The spread operator is three dots, ... that are placed in front of an array, with the effect of spreading out the elements of two arrays and arrange them  in a new array. </li>
+                  <li>join(): To turn the array into a string that comprises all the items in the array, separated by commas. We can also choose a separator other than comma by placing it inside the parentheses.</li>
+                  <li>slice(): It creates a sub array, by taking a slice of the original array, starting at one position and finishing at another.</li>
+                  <li>splice(): To remove items from an array then insert new items in their place. Also to  insert values into an array at a specific index without removing any items. </li>
+                  <li>reverse(): To reverse the order of the array.</li>
+                  <li>sort(): To sort the order of an array. </li>
+                  <li>indexOf(): To find the first occurrence of a value in an array. </li>
+                  <li>includes(): To return a boolean value depending on whether the array contains a particular element or not. </li>
+              </ul>
+              <b>Multidimensional Arrays</b><p> These are considered arrays inside others arrays.</p>
+              
+            <b>Sets</b><p>A set is a data structure that represents a collection of unique values, so it cannot include any duplicate values.</p>
+              <p>To create a set we use <b>new</b> operator and <b>Set()</b> with parentheses. To add values to a set  we use the name of the set with the <b>add()</b>method or by placing the items inside an array</p>
+              <p></p><b>const numberList =</b>new Set();</p>
+              <p>Add Method</p>
+              <b> numberList.add(1).add(2).add(3);</b>
+              <p>Inside an Array</p>
+              <p><b>const numberList =</b> new Set([1,2,3]);</p>
+      
+              <b>Set Methods</b>
+      
+              <ul>
+                  <li>size(): The number of values found in a set.</li>
+                  <li>has(): To check if a value is in a set. Sets do not have index notation for inspecting individual entries</li>
+                  <li>delete(): To remove a value from a set.</li>
+                  <li>clear():To remove all values from a set.</li>
+              </ul>
+      
+              <b>Maps</b><p> The keep a list of key and value pairs. Maps can use any data type as a key.They can only storage and retrieve key-value pairs.</p>
+              <p><p>To create a map we use <b>new</b> operator and <b>Map()</b> constructor. To add values to a map we use the name of the map with the <b>set()</b>method.The set() method can be used to add a key and value pair to a map. The first value is the key and the second is the value</p>
+              
+              <p></p><b>const vowels =</b>new Maps();</p>
+              <p>Set Method inside Maps</p>
+              <b> vowels.set(1, 'a').set(2, 'e').set(3, 'i').set(4, 'o').set(5, 'u');</b>
+            
+              <p>To create a map with multiple values we can use a nested array as a parameter.</p>
+              
+              <p><b>const vowels </b>= new Map([ ['a','e'],['i',o','u']]);</p>
+              
+              <b>Maps Methods</b>
+              <ul>
+                  <li>get(): To retrieve any values</li>
+                  <li>has(): To check if a particular key is in a map.This returns a boolean value of true or false </li>
+                  <li>size:  To find the number of key and value pairs in a map.</li>
+                  <li>delete(): To remove a key and value pair from a map.This returns a boolean value of true if the value was removed or false if it wasn't in the map.  </li>
+                  <li>clear(): To remove all key and value pairs from a map</li>
+              </ul>
+              
+              
+          
+              
+              <h1>Chapter 4</h1>
+              <b>Functions</b><p>A function is a building block and is a set of statements that either  perform a task or calculate and return a  value
+              </p>
+              <ul>There are three ways to declare a function
+                 
+                  <li><b> Function Declaration</b>
+                      <li><p>It  starts with the <b>function keyword</b>  and is followed by the name of the function</p>
+                      <p><b>function myName()</b>{
+                          console.log('Michelle!')
+                          ;}</p></li></li>
+                      <li><b> Function Expression</b>
+                      <li><p> It assigns an anonymous function to a variable.</p>
+                      <p><b>const myName = function()</b>{
+                          console.log('Michelle!');
+                      };</p></li></li>
+                  <li><b> Function Constructor</b><li>
+                      <p> The function is declared using the constructor<b>Function()</b>. However is not recommend to declare functions this way because there are different problems with placing the function inside a string</p>
+                      <p><b>const myName = new Function</b>('console.log("Michelle!");');</p>
+                  </li></li>
+              </ul>
+      
+              <b>Invoking a function</b><p>To make the code of a function run, we should invoke it, declaring the name of the function followed by a parentheses.</p>
+              <p>Example:<b> myName();</b></p>
+              <b>Return Values</b><p>we use the return statement to return the value assigned in the function.</p>
+              <p>Example:<b>function myName(){<br>
+                  return</b> 'Michelle!';<br>
+              }</p>
+      
+              <b>Question: When should a function return 0?</b>
+      
+              <b>Parameters and arguments</b>
+              <p>Parameters and arguments are terms that are often used interchangeably to represent values provided for the function as an input.</p>
+              <b>Parameters</b><p>Are the names listed in the function definition</p>
+              <p><b>Example</b> function myName(x){<br>
+                  return x;<br>
+              }</p><p>In this case X is the parameter and will be replaced by a value that will represent the parameter.</p>
+              <b>Arguments</b><p>Are the real values passed and received by the function</p>
+              <p><b>Example</b> myName(Michelle);<br><br>
+                >> Michelle</p>
+              <p>In this case when we invoke the function we provide the argument, which in this case is the name that represent X</p>
+              
+              <b>Arrow function</b><p>Use the arrow symbol <b> =></b>The parameters come before the arrow and the main body of the function comes after. As they are anonymous, it is necessary to assign them to a variable</p>
+                  <p><b>How exactly the arrow function executes?</b></p>
+      
+               <b>Callbacks</b><p>A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.</p>  
+                  <p>The callback is provided as a parameter, then invoked inside the body of the function.</p>
+                  <p><b>function hello(name,callback)</b>{<br>
+                      console.log(`Lello ${name}.`);<br>
+                      callback();<br>
+                  }</p>
+      
+                  <b>Question: Can a function works with another callback function only if it is passed as an a argument?</b>
+              
+      </section>
+    </div>
+    <footer>
+      &COPY;<span id="#year"></span> Lourenco Da Silva | WDD330 | BYU-I
+    </footer>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
