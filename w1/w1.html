@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Week 1</title>
+  </head>
+  <body>
+    <nav>
+      <ul id="navigation">
+        <li>
+          <a href="#" id="menu">Menu</a>
+        </li>
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li>
+          <a href="../w2/w2.html">Week 2</a>
+        </li>
+        <li>
+          <a href="../w3/w3.html">Week 3</a>
+        </li>
+        <li>
+          <a href="../w4/w4.html">Week 4</a>
+        </li>
+        <li>
+          <a href="../w5/w5.html">Week 5</a>
+        </li>
+        <li>
+          <a href="../w6/w6.html">Week 6:</a>
+        </li>
+        <li>
+
+          <a href="../w7/w7.html">Week7: Final</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main-container">
+    <header></header>
+    <div class="container">
+      <h1>Week 1</h1>
+      <section>
+        <h2>Reading:</h2>
+        <h3>Remembering User's Info</h3>
+        <p>JavaScript localStorage</p>
+        <p>LocalStorage is a data storage type of web storage. This allows the JavaScript sites and apps to store and access the data without any expiration date. This means that the data will always be persisted and will not expire. So, data stored in the browser will be available even after closing the browser window.</p>
+          
+          <p>In short, all we can say is that the localStorage holds the data with no expiry date, which is available to the user even after closing the browser window. It is useful in various ways, such as remembering the shopping cart data or user login on any website.</p>
+          
+          <p>In the past days, cookies were the only option to remember this type of temporary and local information, but now we have localStorage as well. Local storage comes with a higher storage limit than cookies (5MB vs 4MB). It also does not get sent with every HTTP
+          request. So, it is a better choice now for client-side storage. Some essential points of localStorage need to be noted:</p>
+          <ul>
+           <br>
+            <li>localStorage is not secure to store sensitive data and can be accessed using any code. So, it is quite insecure.</li>
+           <br>
+            <li>It is an advantage of localStorage over cookies that it can store more data than cookies. You can store 5MB data on the browser using localStorage.</li>
+           <br>
+            <li>localStorage stores the information only on browser instead in database. Thereby the localStorage is not a substitute for a server-based database.</li>
+           <br>
+            <li>localStorage is synchronous, which means that each operation executes one after another.</li>
+         
+        </ul>
+          
+          <h3>Methods	Description</h3>
+
+          <ul>
+          <br>
+          <li>setItem()	This method is used to add the data through key and value to localStorage.</li>
+          <br>
+          <li>getItem()	It is used to fetch or retrieve the value from the storage using the key.</li>
+          <br>
+          <li>removeItem()	It removes an item from storage by using the key.</li>
+          <br>
+          <li>clear()	It is used to gets clear all the storage.</li>
+          <br>
+          <li>Each of these methods is used with localStorage keyword connecting with dot(.) character. For Example: localStorage.setItem().</li>
+        </ul>
+          <em></em>Remember that localStorage property is read-only.  
+          
+          Add data
+          
+          <p>To add the data in localStorage, both key and value are required to pass in setItem() function.</p>
+          
+          <p>localStorage.setItem("city", "Paris");  </p>
+          <p>Retrieve data</p>
+          
+          <p>It requires only the key to retrieve the data from storage and a JavaScript</p>
+          <p>variable to store the returned data.</p>
+          
+          <p>const res = localStorage.getItem("city");  </p>
+          <p>Remove data</p>
+          
+          <p>It also requires only the key to remove the value attached with it.</p>
+          
+          <p>localStorage.removeItem("city");  
+          <p>Clear localStorage
+          
+          <p>It is a simple clear() function of localStorage, which is used to remove all the localStorage data:</p>
+          
+          <p>localStorage.clear()  
+          
+          
+          <p>As the localStorage allows to store temporary, local data, which remains even after closing the browser window, but it also has few limitations. </p>
+            
+            <h3> Limitations of localStorage:</h3>
+          <ul>
+          <li><em> Do not store sensitive information like username and password in localStorage.</em>
+          localStorage has no data protection and can be accessed using any code. So, it is quite insecure.</li>
+          <li>You can store only maximum 5MB data on the browser using localStorage.</li>
+          <li>localStorage stores the information only on browser not in server-based database.</li>
+          <li>localStorage is synchronous, which means that each operation executes one after another.</li>
+          
+        </ul>
+        <h3>Advantage of localStorage </h3>
+          <ul>
+            <li>First and essential advantage of localStorage is that it can store temporary but useful data in the browser, which remains even after the browser window closed. </li>
+            <li>The data collected by localStorage is stored in the browser. You can store 5 MB data in the browser.</li>
+            <li>There is no expiry date of data stored by localStorage.</li>
+            <li>You can remove all the localStorage item by a single line code, i.e., clear().</li>
+            <li>The localStorage data persist even after closing the browser window, like items in shopping cart.</li>
+            <li>It also has advantages over cookies because it can store more data than cookies.</li>
+          </ul>
+          <p>Here is the example code of the <a href="story_editor.html">Story Editor</a> </p>
+
+
+          <h3>Mobile Master UX</h3> 
+            <p>Mobile UX design is the design of user experiences for hand-held and wearable devices.</p>
+            <p>create solutions (typically applications) to meet mobile users’ unique requirements and restrictions.</p>
+            <p> Designers focus on accessibility, discoverability and efficiency to optimize on-the-go interactive experiences.</p>
+            <br>
+            <h3>Catering to Moving Users</h3>
+              
+            <p>The importance of mobile UX design grew dramatically in 2014. Designers had targeted desktop users as the mainstream, but mobile users suddenly became the online majority. These users have unique needs. They don’t have miniaturized desktop experiences or any of the advantages desktop users enjoy. So, we must create designs where we make the best use of smaller screens and cater to human physical limitations such as fingertip size. We also tailor experiences to match mobile environments. Attention spans are short in mobile UX. Users want results fast, with minimal effort and zero friction. They’re often distracted. Signal and power loss are frequent worries. These users often walk while thumbing devices in potentially dangerous settings – for instance, to explain they’ll be late for work from a train station. Typically, mobile users find themselves in three scenarios:</p>
+              
+              Microtasking – they use devices in short, intense spurts – e.g., to buy tickets.
+              
+              Local – they use devices to see what’s happening around them.
+              
+              Bored – e.g., they surf newsfeed links while waiting.
+              
+             
+            
+            <p>Things to remember</p>
+            <ul> 
+            <li>Desktop computer sales have been declining since 2011 most people use phones now</li>
+            <li>You don’t see people with their heads in laptops, they are in their phones</li>
+            <li>Start small and scale up. The core functionalities start in our phones and then we can scale up to bigger screen devices</li>
+            <li>Mobile is not a fad we will continue to have them for a long time</li>
+            <li>Be there</li>
+            <li>Be useful</li>
+            <li>Be quick</li>
+            <li> Keep it simple</li>
+            <li>Be emphatic with the user</li>
+            <li>Reachability matters</li>
+            <li>Speed matters</li>
+            <li>Placement matters</li>
+            <li>Perception matters</li>
+            <li>Make your users happy and give them a great experience, they don’t know what they need until you give it to them. If you give them a great experience, they will maintain loyal and dedicated to your website or app.</li>
+        </ul>
+        </section>
+    </div>
+    <footer>
+      &COPY;<span id="#year"></span> Lourenco Da Silva | WDD330 | BYU-I
+    </footer>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
